@@ -1,0 +1,13 @@
+saveList
+    Saves the TDList to external storage
+
+saveLists
+    Saves TDList array to external storage
+
+loadList
+    Loads the TDList from external storage
+
+loadLists
+    Loads TDList array from external storage
+
+

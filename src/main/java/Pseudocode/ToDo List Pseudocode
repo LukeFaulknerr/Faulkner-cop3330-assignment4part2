@@ -1,0 +1,4 @@
+Object TDList
+    Includes a 100-unit array of TDItems and a title string
+
+Includes simple getter and setter functions
