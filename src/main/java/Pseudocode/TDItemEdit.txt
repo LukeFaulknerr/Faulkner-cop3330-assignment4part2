@@ -1,0 +1,8 @@
+addTDItem
+    Adds an item to a to-do list
+
+removeTDItem
+    Removes an item from a to-do list
+
+editDescription
+    Changes the description of a given item to a provided string

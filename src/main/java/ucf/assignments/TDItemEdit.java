@@ -1,23 +1,22 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
+ *  Copyright 2021 Luke Faulkner
+ */
+
 package ucf.assignments;
 
+
 public class TDItemEdit {
-    public static void addTDItem(TDList ToDoList){
-        // Adds item to given td list
+    public static void addTDItem(TDItem ToDoItem, TDList ToDoList){
+        ToDoList.getTDItems().add(ToDoItem);
     }
 
     public static void removeTDItem(TDList ToDoList, TDItem removed){
-        // Removes desired item from the list
+        ToDoList.getTDItems().remove(removed);
     }
 
     public static void editDescription(TDItem Item, String newDesc){
-        // Changes description of item
+        Item.setDesc(newDesc);
     }
 
-    public static void editDate(TDItem Item, String newDate){
-        // Changes date of item
-    }
-
-    public static void editComplete(TDItem Item, Boolean newComplete){
-        // Changes completion of item
-    }
 }

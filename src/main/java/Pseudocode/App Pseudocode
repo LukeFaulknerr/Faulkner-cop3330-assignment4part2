@@ -1,0 +1,76 @@
+Main
+    Launch window
+Start
+    Create list that holds all to do lists
+    Create root BorderPane and initial Scene
+    Create MenuBar
+
+    Create a function that creates a new item for a desired list
+        Create a dropbox that allows the user to choose which list they want to add an item to
+        Create text fields to allow the user to enter the dired description and due date
+
+
+    Create a function that deletes an item from a desired list
+        Create a dropbox that allows the user to choose which list their item is in
+        Create a new window with a new dropbox to select the item to delete
+        Call a function that deletes the desired item
+
+    Create a function that clears a list of all items
+        Create a dropbox that allows the user to choose which list to clear
+        Call a function that clears the selected list
+
+    Create a function that edits the description a desired option
+        Create a dropbox that allows the user to choose which list their item is in
+        Create a new window once that choice is selected with all items in the selected list
+        Create a text field that allows the user to enter the new description
+
+    Create a function that edits the due date of a desired option
+        Create a dropbox that allows the user to choose which list their item is in
+        Create a new window once that choice is selected with all items in the selected list
+        Create a text field that allows the user to enter the new due date
+
+    Create a function that edits the completeness of a desired function
+        Create a dropbox that allows the user to choose which list their item is in
+        Create a new window once that choice is selected with all items in the selected list in another dropbox
+        Create a check box that marks an item complete if checked and incomplete if not checked
+
+    Create a function that creates a new list
+        Create a text field that allows for the user's input on the list name
+        Add the list to the list array once the submit button is clicked
+
+    Create a function that displays all lists
+        Display lists with a ListView object
+
+    Create a function that displays all items in a given list
+        Create a dropbox that allows a user to display items from a list of their choosing
+        Create an ArrayList that holds all items
+        Display all items in the created ArrayList
+
+    Create a function that displays all incomplete items in a given list
+        Create a dropbox that allows a user to display incomplete items from a list of their choosing
+        Create an ArrayList that holds all incomplete items
+        Display all items in the created ArrayList
+
+    Create a function that displays all complete items in a given list
+        Create a dropbox that allows a user to display complete items from a list of their choosing
+        Create an ArrayList that holds all complete items
+        Display all items in the created ArrayList
+
+    Create a function that saves a file to external memory
+        Create a dropbox that allows the user to select a list to save
+        Create a button that launches a directory select window
+        Create a .csv file to store the list
+        Write the .csv file to the desired folder
+
+    Create a file that loads a file from external memory
+        Create a button to launch a file select window
+        Read in the file and fill out a list using data from the csv
+        Add the new list object to the array of lists
+
+    Create a help page that displays information on how to use the program
+        Create text boxes to display all info
+        Display text boxes
+
+    Display the default window
+
+

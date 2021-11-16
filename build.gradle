@@ -11,9 +11,6 @@ repositories {
     mavenCentral()
 }
 
-ext {
-    junitVersion = '5.7.1'
-}
 
 sourceCompatibility = '16'
 targetCompatibility = '16'
@@ -35,10 +32,11 @@ javafx {
 dependencies {
     implementation('org.controlsfx:controlsfx:11.1.0')
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
+    //testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
 
 test {
     useJUnitPlatform()
 }
+

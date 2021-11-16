@@ -1,5 +1,0 @@
-displayIncomplete
-    Iterate through the TDList, only display the TDItem if incomplete
-
-displayComplete
-    Iterate through the TDList, only display the TDItem if complete

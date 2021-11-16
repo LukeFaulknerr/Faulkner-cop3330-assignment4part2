@@ -1,5 +1,6 @@
 Object TDItem
-    Includes a description and date as a string
+    Includes a description and date as strings
     Includes a completion marker as a boolean
 
 Includes simple getter and setter functions
+Includes a completion function that returns the completion status of an item as a string (Complete/Incomplete)

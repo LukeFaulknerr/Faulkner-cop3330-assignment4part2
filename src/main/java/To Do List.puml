@@ -9,44 +9,25 @@ class "App" as App {
     Displays visual information and handles visual events
 }
 
-class "fileSaveLoad" as fileSaveLoad {
-    __Methods__
-    +saveList()
-    +saveLists()
-    +loadList()
-    +loadLists()
-    __Attributes__
-    Saves/Loads items and lists to/from external storage
-}
-
 class "TDItemEdit" as TDItemEdit {
     __Methods__
     +addTDItem(TDList ToDoList)
     +removeTDItem(TDList ToDoList, TDItem removed)
     +editDescription(TDItem Item, String newDesc)
-    +editDate(TDItem Item, String newDate)
-    +editComplete(TDItem Item, Boolean newComplete)
     __Attributes__
     Adds/deletes items to/from a list
-    Edits attributes of an item in a list
-}
-
-class "TDListDisplay" as TDListDisplay {
-    __Methods__
-    +displayIncomplete(TDList list)
-    +displayComplete(TDList list)
-    __Attributes__
-    Displays a to-do list
+    Edits description of an item in a list
 }
 
 class "TDListEdit" as TDListEdit {
     __Methods__
     +addTDList(ArrayList<TDList> TDLists)
-    +removeTDList(ArrayList<TDList> TDLists, TDList removed)
-    +editTitle(TDList ToDoList)
+    +clearTDList(TDList ToDoList)
+    +getCompleteAsBoolean(String s)
     __Attributes__
-    Adds/removes TDList from memory
-    Edits title of a to-do list
+    Adds a new TDList to a larger arraylist of TDLists
+    Clears all items from a TDList
+    Returns Boolean form of the strings "true" and "false"
 }
 
 object TDItem {
@@ -55,12 +36,13 @@ object TDItem {
     +getDesc()
     +getDate()
     +getComplete()
+    +getCompleteAsString()
     --Simple Setters--
     +setDesc(String newDesc)
     +setDate(String newDate)
     +setComplete(Boolean newComplete)
     __Attributes__
-    Each object is intended to be held within a greater list, holds a description, date, and completion mark
+    Each object is intended to be held within a greater list, holds a description, due date, and completion mark
 }
 
 object TDList {
@@ -68,18 +50,14 @@ object TDList {
     --Simple Getters--
     +getTDItems()
     +getTile()
-    --Simple Setters--
-    +setTDItems(ArrayList<TDItem> newList)
-    +setTitle (String newTitle)
     __Attributes__
     To-Do list - holds Items to do and a title
 }
 
-App -right-> "fileSaveLoad" : Saves or Loads file with
 App --> "TDItemEdit" : Edits items within a to-do list
-App-left->"TDListDisplay" : Displays a given list
 App -up-> "TDListEdit" : Edits a given list
-TDList -- TDItem : holds
+TDList -- TDItem : TDList holds TDItems
+note top of TDList : Not all getters/setters were necessary for the functions of the porgram and were not included
 
 
 @enduml

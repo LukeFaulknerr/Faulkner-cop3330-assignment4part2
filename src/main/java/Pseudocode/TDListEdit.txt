@@ -1,0 +1,8 @@
+addTDList
+    add a new To-Do list to a larger to do list ArrayList
+
+clearTDList
+    clears a given to-do list
+
+getCompleteAsBoolean
+    return true if the provided string is "true", false otherwise
